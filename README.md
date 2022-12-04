@@ -4,32 +4,33 @@ This repository contains solutions to the [Advent of Code 2022](https://adventof
 
 ## Tasks
 As an additional challange, I decided to solve AoC puzzles using different languages. They are described in the table below.
-| Task | Language |
-| --- | --- |
-| [Day 1](https://adventofcode.com/2022/day/1) | ![image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue) |
-| [Day 2](https://adventofcode.com/2022/day/2) | ![image](https://img.shields.io/badge/Haskell-5D4F85?style=for-the-badge&logo=haskell&logoColor=white) |
-| [Day 3](https://adventofcode.com/2022/day/3) | ![image](https://img.shields.io/badge/Rust-black?style=for-the-badge&logo=rust&logoColor=#E57324) |
-| [Day 4](https://adventofcode.com/2022/day/4) | ![image](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white) |
-| [Day 5](https://adventofcode.com/2022/day/5) | *incoming* |
-| [Day 6](https://adventofcode.com/2022/day/6) | *incoming* |
-| [Day 7](https://adventofcode.com/2022/day/7) | *incoming* |
-| [Day 8](https://adventofcode.com/2022/day/8) | *incoming* |
-| [Day 9](https://adventofcode.com/2022/day/9) | *incoming* |
-| [Day 10](https://adventofcode.com/2022/day/10) | *incoming* |
-| [Day 11](https://adventofcode.com/2022/day/11) | *incoming* |
-| [Day 12](https://adventofcode.com/2022/day/12) | *incoming* |
-| [Day 14](https://adventofcode.com/2022/day/14) | *incoming* |
-| [Day 15](https://adventofcode.com/2022/day/15) | *incoming* |
-| [Day 16](https://adventofcode.com/2022/day/16) | *incoming* |
-| [Day 17](https://adventofcode.com/2022/day/17) | *incoming* |
-| [Day 18](https://adventofcode.com/2022/day/18) | *incoming* |
-| [Day 19](https://adventofcode.com/2022/day/19) | *incoming* |
-| [Day 20](https://adventofcode.com/2022/day/20) | *incoming* |
-| [Day 21](https://adventofcode.com/2022/day/21) | *incoming* |
-| [Day 22](https://adventofcode.com/2022/day/22) | *incoming* |
-| [Day 23](https://adventofcode.com/2022/day/23) | *incoming* |
-| [Day 24](https://adventofcode.com/2022/day/24) | *incoming* |
-| [Day 25](https://adventofcode.com/2022/day/25) | *incoming* |
+
+Task | Language | Stars
+:---: | :---: | :---:
+[Day 1](https://adventofcode.com/2022/day/1) | ![image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue) | ⭐ ⭐
+[Day 2](https://adventofcode.com/2022/day/2) | ![image](https://img.shields.io/badge/Haskell-5D4F85?style=for-the-badge&logo=haskell&logoColor=white) | ⭐ ⭐
+[Day 3](https://adventofcode.com/2022/day/3) | ![image](https://img.shields.io/badge/Rust-black?style=for-the-badge&logo=rust&logoColor=#E57324) | ⭐ ⭐
+[Day 4](https://adventofcode.com/2022/day/4) | ![image](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white) | ⭐ ⭐
+[Day 5](https://adventofcode.com/2022/day/5) | *incoming* |
+[Day 6](https://adventofcode.com/2022/day/6) | *incoming* |
+[Day 7](https://adventofcode.com/2022/day/7) | *incoming* |
+[Day 8](https://adventofcode.com/2022/day/8) | *incoming* |
+[Day 9](https://adventofcode.com/2022/day/9) | *incoming* |
+[Day 10](https://adventofcode.com/2022/day/10) | *incoming* |
+[Day 11](https://adventofcode.com/2022/day/11) | *incoming* |
+[Day 12](https://adventofcode.com/2022/day/12) | *incoming* |
+[Day 14](https://adventofcode.com/2022/day/14) | *incoming* |
+[Day 15](https://adventofcode.com/2022/day/15) | *incoming* |
+[Day 16](https://adventofcode.com/2022/day/16) | *incoming* |
+[Day 17](https://adventofcode.com/2022/day/17) | *incoming* |
+[Day 18](https://adventofcode.com/2022/day/18) | *incoming* |
+[Day 19](https://adventofcode.com/2022/day/19) | *incoming* |
+[Day 20](https://adventofcode.com/2022/day/20) | *incoming* |
+[Day 21](https://adventofcode.com/2022/day/21) | *incoming* |
+[Day 22](https://adventofcode.com/2022/day/22) | *incoming* |
+[Day 23](https://adventofcode.com/2022/day/23) | *incoming* |
+[Day 24](https://adventofcode.com/2022/day/24) | *incoming* |
+[Day 25](https://adventofcode.com/2022/day/25) | *incoming* |
 
 ## Available languages
 ![image](https://img.shields.io/badge/Ada-001ec8?style=for-the-badge&logo=Ada&logoColor=white)
