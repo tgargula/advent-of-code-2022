@@ -1,7 +1,8 @@
-if __name__ == '__main__':
-    step = 2
+FILENAME = 'data/input.txt'
+STEP = 2
 
-    with open('1/input.txt', 'r') as f:
+if __name__ == '__main__':
+    with open(FILENAME, 'r') as f:
         elves = [0]
         for calories in f.readlines():
             calories = calories.strip()
@@ -10,8 +11,8 @@ if __name__ == '__main__':
             else:
                 elves[-1] += int(calories)
     
-    if step == 1:
+    if STEP == 1:
         print(max(elves))
-    elif step == 2:
+    elif STEP == 2:
         top = sorted(elves)[-3:]
         print(sum(top))
