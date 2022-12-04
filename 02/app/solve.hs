@@ -54,7 +54,7 @@ points2 :: [[Char]] -> Int
 points2 s = staticPoints2 s + dynamicPoints2 s
 
 main = do
-    input <- readFile "02/input.txt"
+    input <- readFile "data/input.txt"
     let games = map transform (endBy "\n" input)
     let result = sum games
     print result

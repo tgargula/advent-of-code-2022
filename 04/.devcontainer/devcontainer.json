@@ -1,0 +1,10 @@
+{
+	"name": "Lua",
+	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.16",
+	"postCreateCommand": "sudo apk add lua",
+	"customizations": {
+		"vscode": {
+			"extensions": ["trixnz.vscode-lua"]
+		}
+	}
+}
