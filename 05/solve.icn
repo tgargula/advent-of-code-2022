@@ -1,0 +1,80 @@
+link regexp
+link strings
+
+global FILENAME, STEP
+
+procedure readfile(filename)
+    local file, line, stacks, position, idx, _, stack, a, b, howmany, movefrom, moveto, temp, item
+    file := open(filename, "r") | stop("Cannot open", filename)
+
+    stacks := []
+
+    while line := read(file) do {
+        if *line = 0 then {
+            break
+        }
+        every idx := 1 to *line / 4 + 1 do {
+            if not stacks[idx] then {
+                push(stacks, [])
+            }
+        }
+        every idx := 1 to *line do {
+            position := (idx - 2) / 4 + 1
+            if \((idx - 2) % 4 = 0) & \(line[idx] ~== " ") then {
+                # Stop on indices
+                if \(line[idx] == "1") then {
+                    break
+                }
+                push(stacks[position], line[idx])
+            }
+        }
+    }
+    # Reverse stacks
+    every stack := !stacks do {
+        every idx := 1 to *stack / 2 do {
+            stack[idx] :=: stack[-idx]
+        }
+    }
+
+    while line := read(file) do {
+        a := ReFind("from", line, 1, *line)
+        b := ReFind("to", line, 1, *line)
+        howmany := integer(line[*"move ":a])
+        movefrom := integer(line[a + *"from ":b])
+        moveto := integer(line[b + *"to ":*line+1])
+
+
+        if STEP = 1 then {
+            every _ := 1 to howmany do {
+                push(stacks[moveto], get(stacks[movefrom]))
+            }
+        }
+        if STEP = 2 then {
+            temp := []
+            every _ := 1 to howmany do {
+                push(temp, get(stacks[movefrom]))
+            }
+            every item := !temp do {
+                push(stacks[moveto], item)
+            }
+        }
+    }
+
+    close(file)
+
+    return stacks
+end
+
+procedure main()
+    local stacks, stack
+
+    FILENAME := "./data/input.txt"
+    STEP := 2
+
+    stacks := readfile(FILENAME)
+
+    every stack := !stacks do {
+        writes(get(stack))
+    }
+    write()
+end
