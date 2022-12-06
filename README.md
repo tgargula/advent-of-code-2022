@@ -12,7 +12,7 @@ Task | Language | Stars
 [Day 3](https://adventofcode.com/2022/day/3) | ![image](https://img.shields.io/badge/Rust-black?style=for-the-badge&logo=rust&logoColor=#E57324) | ⭐ ⭐
 [Day 4](https://adventofcode.com/2022/day/4) | ![image](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white) | ⭐ ⭐
 [Day 5](https://adventofcode.com/2022/day/5) | ![image](https://img.shields.io/badge/Icon-62b7fa?style=for-the-badge&logo=unknown&logoColor=F7DF1E) | ⭐ ⭐
-[Day 6](https://adventofcode.com/2022/day/6) | *incoming* |
+[Day 6](https://adventofcode.com/2022/day/6) | ![image](https://img.shields.io/badge/Erlang-A90533?style=for-the-badge&logo=erlang&logoColor=white) | ⭐ ⭐
 [Day 7](https://adventofcode.com/2022/day/7) | *incoming* |
 [Day 8](https://adventofcode.com/2022/day/8) | *incoming* |
 [Day 9](https://adventofcode.com/2022/day/9) | *incoming* |
@@ -44,7 +44,6 @@ Task | Language | Stars
 ![image](https://img.shields.io/badge/D-CC342D?style=for-the-badge&logo=d&logoColor=white)
 ![image](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![image](https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white)
-![image](https://img.shields.io/badge/Erlang-A90533?style=for-the-badge&logo=erlang&logoColor=white)
 ![image](https://img.shields.io/badge/Fortran-734f96?style=for-the-badge&logo=fortran&logoColor=white)
 ![image](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![image](https://img.shields.io/badge/Java-f57b00?style=for-the-badge&logo=java&logoColor=F7DF1E)

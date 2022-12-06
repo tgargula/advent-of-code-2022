@@ -1,0 +1,10 @@
+{
+	"name": "Alpine",
+	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.16",
+	"postCreateCommand": "sudo apk add erlang",
+	"customizations": {
+		"vscode": {
+			"extensions": ["pgourlain.erlang"]
+		}
+	}
+}
