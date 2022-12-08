@@ -1,0 +1,9 @@
+name = "solve"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Tomek Gargula"]
+maintainers = ["Tomek Gargula <tomaszgargula1@gmail.com>"]
+maintainers-logins = ["tgargula"]
+
+executables = ["main"]

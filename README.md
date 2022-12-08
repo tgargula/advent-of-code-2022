@@ -14,7 +14,7 @@ Task | Language | Stars
 [Day 5](https://adventofcode.com/2022/day/5) | ![image](https://img.shields.io/badge/Icon-62b7fa?style=for-the-badge&logo=unknown&logoColor=F7DF1E) | ⭐ ⭐
 [Day 6](https://adventofcode.com/2022/day/6) | ![image](https://img.shields.io/badge/Erlang-A90533?style=for-the-badge&logo=erlang&logoColor=white) | ⭐ ⭐
 [Day 7](https://adventofcode.com/2022/day/7) | ![image](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) | ⭐ ⭐
-[Day 8](https://adventofcode.com/2022/day/8) | *incoming* |
+[Day 8](https://adventofcode.com/2022/day/8) | ![image](https://img.shields.io/badge/Ada-001ec8?style=for-the-badge&logo=Ada&logoColor=white) | ⭐ ⭐
 [Day 9](https://adventofcode.com/2022/day/9) | *incoming* |
 [Day 10](https://adventofcode.com/2022/day/10) | *incoming* |
 [Day 11](https://adventofcode.com/2022/day/11) | *incoming* |
@@ -33,7 +33,6 @@ Task | Language | Stars
 [Day 25](https://adventofcode.com/2022/day/25) | *incoming* |
 
 ## Available languages
-![image](https://img.shields.io/badge/Ada-001ec8?style=for-the-badge&logo=Ada&logoColor=white)
 ![image](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=GNU%20Bash&logoColor=white)
 ![image](https://img.shields.io/badge/Prolog-white?style=for-the-badge)
 ![image](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)

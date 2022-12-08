@@ -1,0 +1,12 @@
+{
+	"name": "Ada",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["adacore.ada"]
+		}
+	},
+	"onCreateCommand": "/opt/ada/bin/alr -n toolchain --select"
+}
