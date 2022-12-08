@@ -1,0 +1,11 @@
+$ cd /
+$ ls
+dir a
+dir b
+213 file
+$ cd a
+$ ls
+23 file
+dir a
+$ cd a
+3434 hello.txt

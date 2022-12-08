@@ -13,7 +13,7 @@ Task | Language | Stars
 [Day 4](https://adventofcode.com/2022/day/4) | ![image](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white) | ⭐ ⭐
 [Day 5](https://adventofcode.com/2022/day/5) | ![image](https://img.shields.io/badge/Icon-62b7fa?style=for-the-badge&logo=unknown&logoColor=F7DF1E) | ⭐ ⭐
 [Day 6](https://adventofcode.com/2022/day/6) | ![image](https://img.shields.io/badge/Erlang-A90533?style=for-the-badge&logo=erlang&logoColor=white) | ⭐ ⭐
-[Day 7](https://adventofcode.com/2022/day/7) | *incoming* |
+[Day 7](https://adventofcode.com/2022/day/7) | ![image](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) | ⭐ ⭐
 [Day 8](https://adventofcode.com/2022/day/8) | *incoming* |
 [Day 9](https://adventofcode.com/2022/day/9) | *incoming* |
 [Day 10](https://adventofcode.com/2022/day/10) | *incoming* |
