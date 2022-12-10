@@ -8,74 +8,51 @@
   {:x (- (:x head) (:x tail)) :y (- (:y head) (:y tail))})
 
 (defn adjust-line [line]
-  (let [[head next & tail] line
-        dx (:x (get-difference head next))
-        dy (:y (get-difference head next))]
-    (cond
-      (or (and (>= dx 1) (> dy 1)) (and (> dx 1) (>= dy 1))) (let [new-next {:x (+ (:x next) 1) :y (+ (:y next) 1)}]
-                                                               (cons head (adjust-line [new-next tail])))
-      (or (and (>= dx 1) (< dy -1)) (and (> dx 1) (<= dy -1))) (let [new-next {:x (+ (get tail :x) 1) :y (- (get tail :y) 1)}]
-                                                                 (cons head (adjust-line [new-next tail])))
-      (or (and (<= dx -1) (> dy 1)) (and (< dx -1) (>= dy 1))) (let [new-next {:x (- (get tail :x) 1) :y (+ (get tail :y) 1)}]
-                                                                 (cons head (adjust-line [new-next tail])))
-      (or (and (<= dx -1) (< dy -1)) (and (< dx -1) (<= dy -1))) (let [new-next {:x (- (get tail :x) 1) :y (- (get tail :y) 1)}]
-                                                                   (cons head (adjust-line [new-next tail])))
-      (> dx 1) (let [new-next {:x (+ (get tail :x) 1) :y (get tail :y)}]
-                 (cons head (adjust-line [new-next tail])))
-      (> dy 1) (let [new-next {:x (get tail :x) :y (+ (get tail :y) 1)}]
-                 (cons head (adjust-line [new-next tail])))
-      (< dx -1) (let [new-next {:x (- (get tail :x) 1) :y (get tail :y)}]
-                  (cons head (adjust-line [new-next tail])))
-      (< dy -1) (let [new-next {:x (get tail :x) :y (- (get tail :y) 1)}]
-                  (cons head (adjust-line [new-next tail])))
-      :else line)))
+  (let [[head next & tail] line]
+    (case (nil? next)
+      true line
+      (let [{dx :x dy :y} (get-difference head next)
+            adjust (fn [new-next] (cons head (adjust-line (cons new-next tail))))]
+        (cond
+          (or (and (>= dx 1) (> dy 1)) (and (> dx 1) (>= dy 1))) (adjust {:x (+ (:x next) 1) :y (+ (:y next) 1)})
+          (or (and (>= dx 1) (< dy -1)) (and (> dx 1) (<= dy -1))) (adjust {:x (+ (:x next) 1) :y (- (:y next) 1)})
+          (or (and (<= dx -1) (> dy 1)) (and (< dx -1) (>= dy 1))) (adjust {:x (- (:x next) 1) :y (+ (:y next) 1)})
+          (or (and (<= dx -1) (< dy -1)) (and (< dx -1) (<= dy -1))) (adjust {:x (- (:x next) 1) :y (- (:y next) 1)})
+          (> dx 1) (adjust {:x (+ (:x next) 1) :y (:y next)})
+          (> dy 1) (adjust {:x (:x next) :y (+ (:y next) 1)})
+          (< dx -1) (adjust {:x (- (:x next) 1) :y (:y next)})
+          (< dy -1) (adjust {:x (:x next) :y (- (:y next) 1)})
+          :else line)))))
 
-(defn move-bridge [s head tail move steps]
-  (let [dx (:x (get-difference head tail))
-        dy (:y (get-difference head tail))]
-    (cond
-      (or (and (>= dx 1) (> dy 1)) (and (> dx 1) (>= dy 1))) (let [new-tail {:x (+ (get tail :x) 1) :y (+ (get tail :y) 1)}]
-                                                               (move-bridge (conj s new-tail) head new-tail move steps))
-      (or (and (>= dx 1) (< dy -1)) (and (> dx 1) (<= dy -1))) (let [new-tail {:x (+ (get tail :x) 1) :y (- (get tail :y) 1)}]
-                                                                 (move-bridge (conj s new-tail) head new-tail move steps))
-      (or (and (<= dx -1) (> dy 1)) (and (< dx -1) (>= dy 1))) (let [new-tail {:x (- (get tail :x) 1) :y (+ (get tail :y) 1)}]
-                                                                 (move-bridge (conj s new-tail) head new-tail move steps))
-      (or (and (<= dx -1) (< dy -1)) (and (< dx -1) (<= dy -1))) (let [new-tail {:x (- (get tail :x) 1) :y (- (get tail :y) 1)}]
-                                                                   (move-bridge (conj s new-tail) head new-tail move steps))
-      (> dx 1) (let [new-tail {:x (+ (get tail :x) 1) :y (get tail :y)}]
-                 (move-bridge (conj s new-tail) head new-tail move steps))
-      (> dy 1) (let [new-tail {:x (get tail :x) :y (+ (get tail :y) 1)}]
-                 (move-bridge (conj s new-tail) head new-tail move steps))
-      (< dx -1) (let [new-tail {:x (- (get tail :x) 1) :y (get tail :y)}]
-                  (move-bridge (conj s new-tail) head new-tail move steps))
-      (< dy -1) (let [new-tail {:x (get tail :x) :y (- (get tail :y) 1)}]
-                  (move-bridge (conj s new-tail) head new-tail move steps))
-      (= steps 0) [s head tail]
-      :else (case move
-              "R" (let [new-head {:x (+ (get head :x) 1) :y (get head :y)}]
-                    (move-bridge s new-head tail move (- steps 1)))
-              "L" (let [new-head {:x (- (get head :x) 1) :y (get head :y)}]
-                    (move-bridge s new-head tail move (- steps 1)))
-              "U" (let [new-head {:x (get head :x) :y (+ (get head :y) 1)}]
-                    (move-bridge s new-head tail move (- steps 1)))
-              "D" (let [new-head {:x (get head :x) :y (- (get head :y) 1)}]
-                    (move-bridge s new-head tail move (- steps 1)))
-              :error))))
+(defn move-bridge [s line move steps]
+  (let [new-line (adjust-line line)
+        [head & tail] new-line
+        new-s (conj s (last new-line))
+        move-head (fn [new-head] (move-bridge new-s (cons new-head tail) move (- steps 1)))]
+    (case steps
+      0 [new-s new-line]
+      (case move
+        "R" (move-head {:x (+ (:x head) 1) :y (:y head)})
+        "L" (move-head {:x (- (:x head) 1) :y (:y head)})
+        "U" (move-head {:x (:x head) :y (+ (:y head) 1)})
+        "D" (move-head {:x (:x head) :y (- (:y head) 1)})
+        :error))))
 
-(defn apply-moves [sets heads tails moves]
-  (cond
-    (or (nil? moves) (empty? moves)) (last sets)
-    :else (let [[[move steps] & rest] moves
-                steps (Integer/parseInt steps)
-                [s head tail] (move-bridge (last sets) (last heads) (last tails) move steps)]
-            (apply-moves (conj sets s) (conj heads head) (conj tails tail) rest))))
+(defn apply-moves [sets lines moves]
+  (case (nil? moves)
+    true (last sets)
+    (let [[[move steps] & rest] moves
+          steps (Integer/parseInt steps)
+          [s new-line] (move-bridge (last sets) (last lines) move steps)]
+      (apply-moves (conj sets s) (conj lines new-line) rest))))
 
 (defn main []
-  (let [head {:x 0 :y 0}
-        tail {:x 0 :y 0}
-        s (set [tail])]
+  (let [step 2
+        line-length (case step 1 2 2 10 :error)
+        line (repeat line-length {:x 0 :y 0})
+        s (set [{:x 0 :y 0}])]
     (with-open [rdr (reader "./data/input.txt")]
-      (let [moves (reduce conj [] (map (fn [line] (str/split line #" ")) (line-seq rdr)))]
-        (println (count (apply-moves [s] [head] [tail] moves)))))))
+      (let [moves (reduce conj [] (map (fn [fileline] (str/split fileline #" ")) (line-seq rdr)))]
+        (println (count (apply-moves [s] [line] moves)))))))
 
 (main)
