@@ -1,0 +1,12 @@
+{
+	"name": "D",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/d:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["webfreak.code-d"]
+		}
+	}
+}
