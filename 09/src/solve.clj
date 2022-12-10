@@ -46,7 +46,7 @@
           [s new-line] (move-bridge (last sets) (last lines) move steps)]
       (apply-moves (conj sets s) (conj lines new-line) rest))))
 
-(defn main []
+(defn -main []
   (let [step 2
         line-length (case step 1 2 2 10 :error)
         line (repeat line-length {:x 0 :y 0})
@@ -54,5 +54,3 @@
     (with-open [rdr (reader "./data/input.txt")]
       (let [moves (reduce conj [] (map (fn [fileline] (str/split fileline #" ")) (line-seq rdr)))]
         (println (count (apply-moves [s] [line] moves)))))))
-
-(main)
