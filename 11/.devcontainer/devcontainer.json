@@ -1,0 +1,10 @@
+{
+	"name": "OCaml",
+	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.16",
+	"customizations": {
+		"vscode": {
+			"extensions": ["ocamllabs.ocaml-platform"]
+		}
+	},
+	"onCreateCommand": "sudo apk add build-base opam && opam init -y && opam install dune merlin ocaml-lsp-server odoc ocamlformat utop dune-release user-setup -y && opam user-setup install && eval $(opam env)"
+}
