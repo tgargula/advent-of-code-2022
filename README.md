@@ -17,7 +17,7 @@ Task | Language | Stars
 [Day 8](https://adventofcode.com/2022/day/8) | ![image](https://img.shields.io/badge/Ada-001ec8?style=for-the-badge&logo=Ada&logoColor=white) | ⭐ ⭐
 [Day 9](https://adventofcode.com/2022/day/9) | ![image](https://img.shields.io/badge/Clojure-5881D8?style=for-the-badge&logo=clojure&logoColor=white) | ⭐ ⭐
 [Day 10](https://adventofcode.com/2022/day/10) | ![image](https://img.shields.io/badge/D-CC342D?style=for-the-badge&logo=d&logoColor=white) | ⭐ ⭐
-[Day 11](https://adventofcode.com/2022/day/11) | *incoming* |
+[Day 11](https://adventofcode.com/2022/day/11) | ![image](https://img.shields.io/badge/OCaml-ee760a?style=for-the-badge&logo=ocaml&logoColor=white) | ⭐ ⭐
 [Day 12](https://adventofcode.com/2022/day/12) | *incoming* |
 [Day 14](https://adventofcode.com/2022/day/14) | *incoming* |
 [Day 15](https://adventofcode.com/2022/day/15) | *incoming* |
@@ -48,7 +48,6 @@ Task | Language | Stars
 ![image](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 ![image](https://img.shields.io/badge/Nim-171921?style=for-the-badge&logo=Nim&logoColor=f3d400)
 ![image](https://img.shields.io/badge/Lisp-black?style=for-the-badge&logo=lisp&logoColor=f3d400)
-![image](https://img.shields.io/badge/OCaml-ee760a?style=for-the-badge&logo=ocaml&logoColor=white)
 ![image](https://img.shields.io/badge/Octave-ff7f2a?style=for-the-badge&logo=octave&logoColor=white)
 ![image](https://img.shields.io/badge/Pascal-3547c2?style=for-the-badge&logo=pascal&logoColor=white)
 ![image](https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=perl&logoColor=white)
