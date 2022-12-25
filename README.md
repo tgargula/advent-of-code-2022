@@ -20,7 +20,7 @@ Task | Language | Stars
 [Day 11](https://adventofcode.com/2022/day/11) | ![image](https://img.shields.io/badge/OCaml-ee760a?style=for-the-badge&logo=ocaml&logoColor=white) | ⭐ ⭐
 [Day 12](https://adventofcode.com/2022/day/12) | ![image](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) | ⭐ ⭐
 [Day 13](https://adventofcode.com/2022/day/13) | ![image](https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white) | ⭐ ⭐
-[Day 14](https://adventofcode.com/2022/day/14) | *incoming* |
+[Day 14](https://adventofcode.com/2022/day/14) | ![image](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white) | ⭐ ⭐
 [Day 15](https://adventofcode.com/2022/day/15) | *incoming* |
 [Day 16](https://adventofcode.com/2022/day/16) | *incoming* |
 [Day 17](https://adventofcode.com/2022/day/17) | *incoming* |
@@ -52,7 +52,6 @@ Task | Language | Stars
 ![image](https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=perl&logoColor=white)
 ![image](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![image](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![image](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 ![image](https://img.shields.io/badge/Scala-DC322F?style=for-the-badge&logo=scala&logoColor=white)
 ![image](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![image](https://img.shields.io/badge/zig-F7A41D?style=for-the-badge&logo=zig&logoColor=white)
